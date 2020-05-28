@@ -1,4 +1,4 @@
-# fullstack
+# Fullstack
 
 Шаблон на Node + React + Redux
 
