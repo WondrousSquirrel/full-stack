@@ -1,0 +1,20 @@
+{
+  "name": "boilerplate_api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon  --exec babel-node server.js"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.1",
+    "@babel/node": "^7.10.1",
+    "@babel/preset-env": "^7.10.1",
+    "nodemon": "^2.0.4"
+  }
+}
