@@ -3,7 +3,7 @@ import winston from "winston";
 // Опции для файла и консоли
 const options = {
   file: {
-    level: "info",
+    level: process.env.NODE_ENV === "production" ? "info" : "debug",
     filename: `./logs/api.log`,
     handleExceptions: true,
     json: true,
@@ -12,7 +12,7 @@ const options = {
     colorize: false,
   },
   console: {
-    level: "debug",
+    level: process.env.NODE_ENV === "production" ? "info" : "debug",
     handleExceptions: true,
     json: false,
     colorize: true,

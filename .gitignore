@@ -4,4 +4,7 @@ node_modules*
 
 # miscellaneous
 *.lock
+
+# outputs
 *.log
+logs*
