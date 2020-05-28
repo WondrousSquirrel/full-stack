@@ -1,6 +1,6 @@
 # TODO
 
-### server
+## server
 
 todo
 
@@ -8,4 +8,4 @@ todo
 - дополнить package.json
 - дополнить readme.md
 
-### client
+## client
