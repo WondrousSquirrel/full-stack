@@ -29,7 +29,7 @@ const logger = winston.createLogger({
 
 // Morgan только консольный логгер, необходимо вручную записывать файл
 logger.stream = {
-  write: function (message, encoding) {
+  write: function (message) {
     logger.info(message);
   },
 };
