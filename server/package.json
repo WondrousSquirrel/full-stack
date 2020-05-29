@@ -1,11 +1,31 @@
 {
   "name": "boilerplate_api",
   "version": "1.0.0",
-  "main": "index.js",
+  "private": true,
+  "main": "server.js",
   "license": "MIT",
+  "description": "express api for fullstack template",
   "scripts": {
     "dev": "nodemon  --exec babel-node server.js"
   },
+  "author": {
+    "name": "Alexander Antoschuk",
+    "email": "wondroussquirrel@gmail.com"
+  },
+  "homepage": "https://github.com/WondrousSquirrel/fullstack/tree/master/server",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WondrousSquirrel/fullstack/tree/master/server"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "api",
+    "template",
+    "dotenv",
+    "loggers",
+    "babel"
+  ],
   "dependencies": {
     "chalk": "^4.0.0",
     "dotenv": "^8.2.0",
