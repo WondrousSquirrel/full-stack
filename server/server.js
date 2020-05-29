@@ -1,11 +1,15 @@
 // Главный файл api
 
 import app from "./app";
+import dotenv from "dotenv";
+
 import { appConfig } from "./config";
 import { neutral } from "./config/messages";
 
-app.listen(3000, () => {
+dotenv.config();
+
+app.listen(process.env.PORT, () => {
   neutral(
-    `name: ${appConfig.name}, version: ${appConfig.version} has started on port: 3000`
+    `name: ${appConfig.name}, version: ${appConfig.version} has started on port: ${process.env.PORT}`
   );
 });
