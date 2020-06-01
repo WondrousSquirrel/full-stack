@@ -5,7 +5,9 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --color --config ./webpack.dev.js",
-    "build": "webpack --config ./webpack.prod.js"
+    "build": "webpack --config ./webpack.prod.js",
+    "lint": "eslint ./index.js",
+    "lintFix": "eslint --fix ./index.js"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
@@ -17,6 +19,7 @@
     "css-loader": "^3.5.3",
     "eslint": "^7.1.0",
     "eslint-plugin-react": "^7.20.0",
+    "eslint-watch": "^7.0.0",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
     "image-webpack-loader": "^6.0.0",
