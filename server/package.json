@@ -9,8 +9,8 @@
     "start": "NODE_ENV=production babel-node server.js",
     "dev": "NODE_ENV=development nodemon  --exec babel-node server.js",
     "lint": "eslint \"./**/*.js\" --quiet",
-    "lintFull": "eslint \"./**/*.js\"",
-    "lintFix": "eslint --fix './**/*.js'"
+    "lint:full": "eslint \"./**/*.js\"",
+    "lint:fix": "eslint --fix './**/*.js'"
   },
   "author": {
     "name": "Alexander Antoschuk",

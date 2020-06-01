@@ -1,3 +1,9 @@
+/*
+  Хранилище состояний для react`a.
+  Здесь создается и подключаются все остальное, что должно взаимодействовать 
+  с хранилищем.
+ */
+
 import { createStore, applyMiddleware, compose } from "redux";
 import createSagaMiddleware from "redux-saga";
 

@@ -6,8 +6,9 @@
   "scripts": {
     "start": "webpack-dev-server --color --config ./webpack.dev.js",
     "build": "webpack --config ./webpack.prod.js",
-    "lint": "eslint ./src/",
-    "lintFix": "eslint --fix ./src/index.jsx"
+    "lint": "eslint ./src/ --quiet",
+    "lint:full": "eslint ./src",
+    "lint:fix": "eslint --fix ./src/index.jsx"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
