@@ -6,8 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --color --config ./webpack.dev.js",
     "build": "webpack --config ./webpack.prod.js",
-    "lint": "eslint ./index.js",
-    "lintFix": "eslint --fix ./index.js"
+    "lint": "eslint ./src/",
+    "lintFix": "eslint --fix ./src/index.jsx"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
@@ -32,6 +32,9 @@
   },
   "dependencies": {
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-saga": "^1.1.3"
   }
 }
