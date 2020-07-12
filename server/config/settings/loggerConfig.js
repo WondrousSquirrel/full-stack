@@ -1,7 +1,7 @@
 // Опции для файла и консоли
 const loggerConfig = {
   file: {
-    level: process.env.NODE_ENV === "production" ? "info" : "debug",
+    level: 'info',
     filename: `./logs/api.log`,
     handleExceptions: true,
     json: true,
@@ -10,7 +10,7 @@ const loggerConfig = {
     colorize: false,
   },
   console: {
-    level: process.env.NODE_ENV === "production" ? "info" : "debug",
+    level: 'debug',
     handleExceptions: true,
     json: false,
     colorize: true,
