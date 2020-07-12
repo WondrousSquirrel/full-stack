@@ -19,6 +19,6 @@ if (process.env.NODE_ENV === "production") {
 
 app.listen(PORT, () => {
   logger.info(
-    `name: ${appConfig.name}, version: ${appConfig.version} has started: http://localhost:${PORT}/`
+    `name: ${appConfig.name}, version: ${appConfig.version} has started: http://localhost:${PORT}`
   );
 });
