@@ -1,7 +1,5 @@
-import winston from "winston";
-
 // Опции для файла и консоли
-const options = {
+const loggerConfig = {
   file: {
     level: process.env.NODE_ENV === "production" ? "info" : "debug",
     filename: `./logs/api.log`,
@@ -19,19 +17,4 @@ const options = {
   },
 };
 
-const logger = winston.createLogger({
-  transports: [
-    new winston.transports.File(options.file),
-    new winston.transports.Console(options.console),
-  ],
-  exitOnError: false, // не заканчивать работу при обработаных исключениях
-});
-
-// Morgan только консольный логгер, необходимо вручную записывать файл
-logger.stream = {
-  write: function (message) {
-    logger.info(message);
-  },
-};
-
-export default logger;
+export default loggerConfig;

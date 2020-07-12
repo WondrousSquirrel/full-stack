@@ -4,7 +4,8 @@ import app from "./app";
 import dotenv from "dotenv";
 import path from "path";
 
-import { appConfig, logger } from "./config";
+import { appConfig } from "./config";
+import logger from "./services/logger";
 
 dotenv.config();
 

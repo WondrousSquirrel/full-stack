@@ -1,11 +1,10 @@
 import express from "express";
 import path from "path";
-
 import dotenv from "dotenv";
-
 import morgan from "morgan";
-import { logger } from "./config";
+
 import router from "./routes";
+import logger from "./services/logger";
 
 dotenv.config();
 const app = express();
