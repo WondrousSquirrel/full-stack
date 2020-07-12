@@ -1,7 +1,8 @@
 import React from "react";
 import { Provider } from "react-redux";
+import { PersistGate } from 'redux-persist/integration/react';
 
-import store from "./store/store";
+import {persistor, store} from "./store/store";
 
 import "./style.scss";
 
@@ -9,7 +10,9 @@ const App = () => {
   return (
     <div className="centered">
       <Provider store={store}>
-        <h1 className="title">All Work Fine</h1>
+        <PersistGate loading={'Loading...'} persistor={persistor}>
+          <h1 className="title">All Work Fine</h1>
+        </PersistGate>
       </Provider>
     </div>
   );

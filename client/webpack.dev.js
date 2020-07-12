@@ -10,14 +10,13 @@ module.exports = merge(common, {
     open: true,
     compress: true,
     port: 3000,
-    noInfo: true,
     historyApiFallback: true,
     proxy: {
       "api/": "http://localhost:5000",
     },
     onListening: (server) => {
       const port = server.listeningApp.address().port;
-      console.log(`webpack-dev-server succesfully started`);
+      console.log(`webpack-dev-server succesfully started on http://localhost:${port}`);
     },
   },
 });
