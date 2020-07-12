@@ -6,11 +6,6 @@
 
 import { combineReducers } from "redux";
 
-import errorReducer from "./errorReducer";
-
-const rootReducer = combineReducers({
-  //  Как будет выглядеть store или представление редьюсеров в store
-  error: errorReducer,
-});
+const rootReducer = combineReducers({});
 
 export default rootReducer;
