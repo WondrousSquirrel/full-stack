@@ -4,8 +4,7 @@ import app from "./app";
 import dotenv from "dotenv";
 import path from "path";
 
-import { appConfig } from "./config";
-import { neutral } from "./config/messages";
+import { appConfig, logger } from "./config";
 
 dotenv.config();
 
@@ -18,7 +17,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 app.listen(PORT, () => {
-  neutral(
-    `name: ${appConfig.name}, version: ${appConfig.version} has started on port: ${PORT}`
+  logger.info(
+    `name: ${appConfig.name}, version: ${appConfig.version} has started: http://localhost:${PORT}/`
   );
 });
