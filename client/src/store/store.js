@@ -14,7 +14,6 @@ import rootReducer from "./rootReducer";
 
 const sagaMiddleware = createSagaMiddleware();
 
-
 const persistConfig = {
   key: 'primary',
   storage,
